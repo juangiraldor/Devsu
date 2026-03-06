@@ -1,6 +1,9 @@
 {
     "standard": {
         "username": "standard_user",
-        "password": "secret_sauce"
+        "password": "secret_sauce",
+        "firstName": "Prueba",
+        "lastName": "Devsu",
+        "postalCode": "660001"
     }
 }
