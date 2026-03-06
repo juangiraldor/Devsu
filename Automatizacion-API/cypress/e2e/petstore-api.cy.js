@@ -13,7 +13,7 @@ describe('Prueba Petstore API', () => {
         cy.fixture('pet').then((pet) => {
             cy.request({
                 method: 'POST',
-                url: 'https://petstore.swagger.io/v2/pet',
+                url: '/pet',
                 body: pet
             }).then((response) => {
                 expect(response.status).to.eq(200)
@@ -27,7 +27,7 @@ describe('Prueba Petstore API', () => {
     it('Consultar la mascota agregada previamente', () => {
         cy.request({
             method: 'GET',
-            url: 'https://petstore.swagger.io/v2/pet/${petId}'
+            url: `/pet/${petId}`
         }).then((response) => {
             expect(response.status).to.eq(200)
             expect(response.body.id).to.eq(petId)
@@ -43,7 +43,7 @@ describe('Prueba Petstore API', () => {
         }
         cy.request({
             method: 'PUT',
-            url: 'https://petstore.swagger.io/v2/pet',
+            url: '/pet',
             body: updatePet
         }).then((response) => {
             expect(response.status).to.eq(200)
@@ -56,7 +56,7 @@ describe('Prueba Petstore API', () => {
     it('Consultar mascota por estatus', () => {
         cy.request({
             method: 'GET',
-            url: 'https://petstore.swagger.io/v2/pet/findByStatus?status=sold',
+            url: '/pet/findByStatus?status=sold',
         }).then((response) => {
             expect(response.status).to.eq(200)
             const petFound = response.body.find(pet => pet.id === petId)
