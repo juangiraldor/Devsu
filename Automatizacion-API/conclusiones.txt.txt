@@ -1,0 +1,21 @@
+Conclusiones de la prueba
+
+Se utilizó la API de la petstore, la cuál se pudo verificar que funciona correctamente.
+Primero se consultó por el navegador la Petstore API para conocer su estructura y sus diferentes métodos.
+Luego de esta exploración, se ejecutaron todos los casos de prueba propuestos para el ejercicio:
+
+- Añadir una mascota a la tienda
+- Consultar la mascota ingresada previamente (Búsqueda por ID)
+- Actualizar el nombre de la mascota y el estatus de la mascota a "sold"
+- Consultar la mascota modificada por estatus (Búsqueda por estatus)
+
+Encontrando una correcta respuesta para cada uno de ellos (Code 200). 
+También se hicieron validaciones adicionales de id y nombre para corroborar que la respuesta estuviera ok.
+
+Buenas prácticas implementadas
+
+- Uso de fixtures para manejo de datos de prueba
+- Uso de baseUrl para evitar repetir la URL base de la API
+- Validación de respuestas HTTP y contenido del response body.
+
+Se incluye gif con evidencia de la ejecución correcta de las pruebas.
