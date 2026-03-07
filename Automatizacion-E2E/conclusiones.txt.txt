@@ -1,0 +1,25 @@
+Conclusiones de la prueba
+
+Se utilizó el sitio web (e-commerce) https://www.saucedemo.com/, el cuál se pudo verificar que funciona correctamente.
+Primero se realizaron pruebas exploratorias del sitio, conociendo su funcionamiento y como se encontraba estructurado
+su HTML. Luego de esta exploración, se desarrollaron los scripts para realizar la verificación E2E propuesta en el
+ejercicio:
+
+- Autenticarse con el usuario: standard_user y password: secret_sauce
+- Agregar dos productos al carrito
+- Visualizar el carrito
+- Completar el formulario de compra
+- Finalizar la compra hasta la confirmación: "THANK YOU FOR YOUR ORDER"
+
+Se ejecutó el script desarrollado el cual permitió encontrar una correcto funcionamiento del sitio, iniciando sesión, 
+añadiendo los productos al carrito, confirmando la compra y finalmente diligenciando el checkout que permitió realizar 
+la compra y finalizar la prueba. 
+
+Buenas prácticas implementadas
+
+- Uso de fixtures para manejo de datos de prueba
+- Uso de baseUrl para evitar repetir la URL base de la API
+- Uso de custom commands para simplificar el test y eliminar duplicidad de código.
+
+Se incluyeron reportes de ejecución de pruebas utilizando la librería Mochawesome para cypress.
+Este reporte está incluido en el repositorio y se puede abrir en cualquier navegador.
