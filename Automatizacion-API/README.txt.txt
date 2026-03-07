@@ -28,7 +28,7 @@ Cypress
 1. Clonar el repositorio
 git clone https://github.com/juangiraldor/Devsu.git
 
-2. Instalar dependencias
+2. Instalar dependencias dentro de la carpeta Automatizacion-API
 npm install
 
 3. Ejecución de las pruebas
